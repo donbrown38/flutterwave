@@ -1,0 +1,61 @@
+/* footer section */
+
+@font-face {
+    font-family: 'Moderat-Light';
+    src: url('../fonts/Moderat-Light.woff2') format('woff2'),
+         url('../fonts/Moderat-Light.woff') format('woff'),
+}
+         
+@font-face {
+    font-family: 'Millik';
+    src: url('font/Millik-Regular.eot');
+    src: url('font/Millik-Regular.eot?#iefix') format('embedded-opentype'),
+         url('font/Millik-Regular.woff2') format('woff2'),
+         url('font/Millik-Regular.woff') format('woff'),
+         url('font/Millik-Regular.ttf')  format('truetype'),
+}
+
+
+footer {
+    background-color: #000000, opacity 0%;
+}
+
+.box_black {
+    border-radius: 20px;
+    box-shadow: rgba(29, 29, 29, 0.5) 0px 25px 50px 0px;
+    background-color: #1d1d1d;
+    height: 400px;
+    width: 1009px;
+    margin-left: 203px;
+    margin-right: 203px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: start;
+    padding: 81px 175px;
+    font-family: 'Moderat', serif;
+}
+
+.h1footer {
+    font-size: 50px;
+    font-family: 'Millik', sans-serif;
+    line-height: 54px;
+    text-align: start;
+    color: #ffffff;
+    padding-bottom: 31px;
+}
+
+.pfooter {
+    font-size: 22px;
+    font-family: 'Moderat', sans-serif;
+    line-height: 32px;
+    text-align: start;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.Contact {
+    padding-top: 68px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 22px;
+}

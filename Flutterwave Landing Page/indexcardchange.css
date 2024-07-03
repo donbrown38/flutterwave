@@ -1,0 +1,232 @@
+/* for card picture */
+#backgrdcard_black {
+    background-color: #1d1d1d;
+    margin: 0;
+    border: 0;
+}
+
+.forcard {
+    color: #fff;
+    padding: 100px 279px 0px 279px;
+    font-size: 80px;
+    line-height: 86px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.forcard span {
+    color: #6672c7;
+}
+
+.forcardh2 {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: normal;
+    padding-left: 374px;
+    padding-right: 374px;
+    font-family: 'Moderat', sans-serif;
+    font-weight: 256;
+}
+
+.btn_gets_card {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 16px;
+    margin-top: 49px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    color: black;
+    font-family: 'Moderat', sans-serif;
+    padding: 28px 32px; 
+}
+
+
+#class_card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: 500px;
+    margin: 100px 374px 100px 374px;
+}
+
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card1 img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.item1 img {
+    grid-area: 1 / 1 / 2 / 2;
+    position: absolute;
+    top: 615%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    
+}
+
+.item2 img {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    top: 610%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.item3 img {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 2;
+    top: 605%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.item4 img {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 3;
+    top: 600%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.item1:hover {
+    transform: translateY(var(--translate-1));
+}
+
+.item2:hover {
+    transform: translateY(var(--translate-2));
+}
+
+.item3:hover {
+    transform: translateY(var(--translate-3));
+}
+
+.item4:hover {
+    transform: translateY(var(--translate-4));
+}
+
+
+:root {
+    --translate-1: -5px;
+    --translate-2: calc(var(--translate-1) - 5px);
+    --translate-3: calc(var(--translate-2) - 5px);
+    --translate-4: calc(var(--translate-3) - 5px);
+}
+
+.card1 img:first-child {
+    opacity: 1;
+}
+
+
+/* for three slide  */
+#container_fromcard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 70px;
+    margin-top: 200px;
+    padding-bottom: 30%;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.fromcard1 {
+    width: 561px;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #313131;
+    border-radius: 16px;
+    padding: 30px 30px;
+    font-size: 16px;
+    font-family: 'Moderat', sans-serif;
+    font-weight: 230;
+    line-height: 15px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.5);
+    transition: all 5s ease;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.fromcard2 {
+    width: 561px;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #313131;
+    border-radius: 16px;
+    padding: 30px 30px;
+    font-size: 16px;
+    font-family: 'Moderat', sans-serif;
+    font-weight: 256;
+    line-height: 22.4px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    left: 300px;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.5);
+    transition: all 5s ease;
+    z-index: 2;
+    
+}
+
+.fromcard3 {
+    width: 561px;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #313131;
+    border-radius: 16px;
+    padding: 30px 30px;
+    font-size: 16px;
+    font-family: 'Moderat', sans-serif;
+    font-weight: 256;
+    line-height: 22.4px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 3;
+    left: 50%;
+    position: absolute;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.5);
+    transition: all 5s ease;
+}
+
+/* #container_fromcard:hover .fromcard2 {
+    right: 0;
+}
+
+
+#container_fromcard:hover .fromcard3 {
+    left: 0;
+} */
+
+.formcard1h2 {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Moderat', sans-serif;
+}
+
+.formcard1p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Moderat', sans-serif;
+    font-weight: 256;
+}

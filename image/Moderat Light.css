@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Moderat Light';
+    src: url('fonts/Moderat-Light.eot');
+    src: url('fonts/Moderat-Light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Moderat-Light.woff2') format('woff2'),
+         url('fonts/Moderat-Light.woff') format('woff'),
+         url('fonts/Moderat-Light.ttf')  format('truetype'),
+         url('fonts/Moderat-Light.svg#Moderat Light') format('svg');
+}

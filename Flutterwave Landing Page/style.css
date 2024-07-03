@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: 'Moderat-Light';
+    src: url('../fonts/Moderat-Light.woff2') format('woff2'),
+         url('../fonts/Moderat-Light.woff') format('woff'),
+}
+         
+@font-face {
+    font-family: 'Millik';
+    src: url('font/Millik-Regular.eot');
+    src: url('font/Millik-Regular.eot?#iefix') format('embedded-opentype'),
+         url('font/Millik-Regular.woff2') format('woff2'),
+         url('font/Millik-Regular.woff') format('woff'),
+         url('font/Millik-Regular.ttf')  format('truetype'),
+         url('font/Millik-Regular.svg#Millik') format('svg');
+}
+
+
+/*section-1*/
+
+.section-one { 
+    font-family: 'Moderat-Light', sans-serif;
+    padding: 2rem;
+    background-color: #f8fafd;
+    width: 100%;    
+}
+
+.section-one h1{
+    font-family: 'Millik', sans-serif;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.section-one p{
+    padding-bottom: 1rem;
+}
+.section-one li{
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
+.container{
+    padding: 1rem;
+}
+
+
+button{
+    padding: 1.4rem 2.4rem;
+    border-radius: 1rem;
+    background-color: #0a0e27;
+    color: #f8fafd;
+}
+
+/*section-2*/
+.section-two{
+    font-family: 'Moderat', sans-serif;
+    padding: 2rem;
+    width: 100%;
+
+}
+.section-two h1 {
+    font-family: 'Millik', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.section-two h2 {
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.section-two p {
+    padding-bottom: 2rem;
+}
+
+.section-two .grid{
+    padding: 2rem;
+    position: relative;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    
+}
+.row ul{
+    padding-left: 1rem;
+}
+
+.row ul{
+    list-style-type: none;
+    
+}
+.row ul li{
+    padding-bottom:  .5rem;
+}
+
+/*globe*/
+.contain{
+    margin:auto;
+    
+}
+.globe{
+    
+    background: #262c55 url(image/globe.png)   repeat;
+
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-size: 630px;
+    animation: rotate 10s linear infinite;
+    transition: transform 900ms linear;
+    transform-style: preserve-3d;
+    box-shadow: inset 20px 0 80px 6px rgb(0,0,0);
+    
+}
+
+
+
+/*utility*/
+
+.purple{
+    color: #eb7da7;
+}
+
+.blue{
+    color: #6672c7;
+}
+.green{
+    color:#00abab;
+}
+
+h2:before {
+    border: 1px solid #000;
+    content: "";
+    height: 1.5rem;
+    position: absolute;
+    top: -0.1;
+    left:0.1rem;
+    width: 0.05rem;
+    background-color: #000;
+
+}
+.stat:before {
+    background-image: url(image/dots.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 90%;
+    position: absolute;
+    top: 2rem;
+    width: 0.1rem;
+    left: 0.09rem;
+
+}
+
+
+
+
+@keyframes rotate{
+    0%{
+        background-position: 0 0 ;
+    }
+    100%{
+        background-position: 600px 0;
+    }
+}
+
+
+@media(min-width:700px){
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        
+    }
+
+    .section-one{
+        padding: 6rem;
+        width: 100%;
+        
+        
+    }
+    .section-one h1{
+        font-size: 5rem;
+    }
+    
+    .globe{
+        width: 700px;
+        height: 700px;
+        background-size: 1000px;
+
+    }
+    .section-two{
+        padding: 6rem;
+       
+    }
+    .section-two h1{
+        font-size: 5rem;
+    }
+
+
+    .section-two p{
+        padding-bottom: 4rem;
+       
+    }
+}
